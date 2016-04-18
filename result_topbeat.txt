@@ -1,0 +1,369 @@
+tarik@tarik:~$ curl -XGET 'http://localhost:9200/topbeat-*/_search?pretty'
+{
+  "took" : 39,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 10,
+    "successful" : 10,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 8896,
+    "max_score" : 1.0,
+    "hits" : [ {
+      "_index" : "topbeat-2016.04.17",
+      "_type" : "process",
+      "_id" : "AVQmQZT0J7u3Z08_Ljkx",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-17T22:01:18.922Z",
+        "beat" : {
+          "hostname" : "tarik",
+          "name" : "tarik"
+        },
+        "count" : 1,
+        "proc" : {
+          "cmdline" : "/usr/lib/firefox/firefox https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html",
+          "cpu" : {
+            "user" : 63380,
+            "user_p" : 0.0971,
+            "system" : 3750,
+            "total" : 67130,
+            "start_time" : "03:25"
+          },
+          "mem" : {
+            "size" : 1225453568,
+            "rss" : 318197760,
+            "rss_p" : 0.04,
+            "share" : 91471872
+          },
+          "name" : "firefox",
+          "pid" : 12909,
+          "ppid" : 1141,
+          "state" : "sleeping",
+          "username" : "tarik"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.17",
+      "_type" : "system",
+      "_id" : "AVQmQZT0J7u3Z08_Ljkz",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-17T22:01:25.908Z",
+        "beat" : {
+          "hostname" : "tarik",
+          "name" : "tarik"
+        },
+        "count" : 1,
+        "cpu" : {
+          "user" : 817787,
+          "user_p" : 0.0618,
+          "nice" : 6585,
+          "system" : 122344,
+          "system_p" : 0.0136,
+          "idle" : 10545176,
+          "iowait" : 111763,
+          "irq" : 0,
+          "softirq" : 3492,
+          "steal" : 0
+        },
+        "load" : {
+          "load1" : 0.56,
+          "load5" : 0.37,
+          "load15" : 0.43
+        },
+        "mem" : {
+          "total" : 8298352640,
+          "used" : 5660622848,
+          "free" : 2637729792,
+          "used_p" : 0.68,
+          "actual_used" : 2434469888,
+          "actual_free" : 5863882752,
+          "actual_used_p" : 0.29
+        },
+        "swap" : {
+          "total" : 2047864832,
+          "used" : 0,
+          "free" : 2047864832,
+          "used_p" : 0
+        },
+        "type" : "system"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.17",
+      "_type" : "process",
+      "_id" : "AVQmQZT0J7u3Z08_Ljk2",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-17T22:01:25.909Z",
+        "beat" : {
+          "hostname" : "tarik",
+          "name" : "tarik"
+        },
+        "count" : 1,
+        "proc" : {
+          "cpu" : {
+            "user" : 0,
+            "user_p" : 0,
+            "system" : 460,
+            "total" : 460,
+            "start_time" : "19:24"
+          },
+          "mem" : {
+            "size" : 0,
+            "rss" : 0,
+            "rss_p" : 0,
+            "share" : 0
+          },
+          "name" : "ksoftirqd/0",
+          "pid" : 3,
+          "ppid" : 2,
+          "state" : "sleeping",
+          "username" : "root"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.17",
+      "_type" : "process",
+      "_id" : "AVQmQZT0J7u3Z08_Ljk7",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-17T22:01:25.910Z",
+        "beat" : {
+          "hostname" : "tarik",
+          "name" : "tarik"
+        },
+        "count" : 1,
+        "proc" : {
+          "cpu" : {
+            "user" : 0,
+            "user_p" : 0,
+            "system" : 0,
+            "total" : 0,
+            "start_time" : "19:24"
+          },
+          "mem" : {
+            "size" : 0,
+            "rss" : 0,
+            "rss_p" : 0,
+            "share" : 0
+          },
+          "name" : "rcuob/0",
+          "pid" : 10,
+          "ppid" : 2,
+          "state" : "sleeping",
+          "username" : "root"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.17",
+      "_type" : "process",
+      "_id" : "AVQmQZT0J7u3Z08_Ljk9",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-17T22:01:25.911Z",
+        "beat" : {
+          "hostname" : "tarik",
+          "name" : "tarik"
+        },
+        "count" : 1,
+        "proc" : {
+          "cpu" : {
+            "user" : 0,
+            "user_p" : 0,
+            "system" : 120,
+            "total" : 120,
+            "start_time" : "19:24"
+          },
+          "mem" : {
+            "size" : 0,
+            "rss" : 0,
+            "rss_p" : 0,
+            "share" : 0
+          },
+          "name" : "watchdog/0",
+          "pid" : 12,
+          "ppid" : 2,
+          "state" : "sleeping",
+          "username" : "root"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.17",
+      "_type" : "process",
+      "_id" : "AVQmQZT0J7u3Z08_LjlE",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-17T22:01:25.912Z",
+        "beat" : {
+          "hostname" : "tarik",
+          "name" : "tarik"
+        },
+        "count" : 1,
+        "proc" : {
+          "cpu" : {
+            "user" : 0,
+            "user_p" : 0,
+            "system" : 100,
+            "total" : 100,
+            "start_time" : "19:24"
+          },
+          "mem" : {
+            "size" : 0,
+            "rss" : 0,
+            "rss_p" : 0,
+            "share" : 0
+          },
+          "name" : "watchdog/2",
+          "pid" : 20,
+          "ppid" : 2,
+          "state" : "sleeping",
+          "username" : "root"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.17",
+      "_type" : "process",
+      "_id" : "AVQmQZT0J7u3Z08_LjlH",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-17T22:01:25.913Z",
+        "beat" : {
+          "hostname" : "tarik",
+          "name" : "tarik"
+        },
+        "count" : 1,
+        "proc" : {
+          "cpu" : {
+            "user" : 0,
+            "user_p" : 0,
+            "system" : 0,
+            "total" : 0,
+            "start_time" : "19:24"
+          },
+          "mem" : {
+            "size" : 0,
+            "rss" : 0,
+            "rss_p" : 0,
+            "share" : 0
+          },
+          "name" : "kworker/2:0H",
+          "pid" : 24,
+          "ppid" : 2,
+          "state" : "sleeping",
+          "username" : "root"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.17",
+      "_type" : "process",
+      "_id" : "AVQmQZT0J7u3Z08_LjlV",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-17T22:01:46.913Z",
+        "beat" : {
+          "hostname" : "tarik",
+          "name" : "tarik"
+        },
+        "count" : 1,
+        "proc" : {
+          "cpu" : {
+            "user" : 0,
+            "user_p" : 0,
+            "system" : 0,
+            "total" : 0,
+            "start_time" : "19:24"
+          },
+          "mem" : {
+            "size" : 0,
+            "rss" : 0,
+            "rss_p" : 0,
+            "share" : 0
+          },
+          "name" : "writeback",
+          "pid" : 39,
+          "ppid" : 2,
+          "state" : "sleeping",
+          "username" : "root"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.17",
+      "_type" : "process",
+      "_id" : "AVQmQZXHJ7u3Z08_Ljlf",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-17T22:01:46.916Z",
+        "beat" : {
+          "hostname" : "tarik",
+          "name" : "tarik"
+        },
+        "count" : 1,
+        "proc" : {
+          "cpu" : {
+            "user" : 0,
+            "user_p" : 0,
+            "system" : 0,
+            "total" : 0,
+            "start_time" : "19:24"
+          },
+          "mem" : {
+            "size" : 0,
+            "rss" : 0,
+            "rss_p" : 0,
+            "share" : 0
+          },
+          "name" : "kswapd0",
+          "pid" : 54,
+          "ppid" : 2,
+          "state" : "sleeping",
+          "username" : "root"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.17",
+      "_type" : "process",
+      "_id" : "AVQmQZXHJ7u3Z08_Ljlg",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-17T22:01:46.916Z",
+        "beat" : {
+          "hostname" : "tarik",
+          "name" : "tarik"
+        },
+        "count" : 1,
+        "proc" : {
+          "cpu" : {
+            "user" : 0,
+            "user_p" : 0,
+            "system" : 0,
+            "total" : 0,
+            "start_time" : "19:24"
+          },
+          "mem" : {
+            "size" : 0,
+            "rss" : 0,
+            "rss_p" : 0,
+            "share" : 0
+          },
+          "name" : "vmstat",
+          "pid" : 55,
+          "ppid" : 2,
+          "state" : "sleeping",
+          "username" : "root"
+        },
+        "type" : "process"
+      }
+    } ]
+  }
+}
+
